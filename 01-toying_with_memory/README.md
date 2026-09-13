@@ -159,3 +159,8 @@ The educational allocator is intentionally minimal:
 - no production use
 
 It is an educational model of allocator fundamentals, not a replacement for a production allocator.
+
+## Reading material & suggested content:
+https://dev.to/frosnerd/libmalloc-jemalloc-tcmalloc-mimalloc-exploring-different-memory-allocators-4lp3
+https://go.dev/src/runtime/malloc.go
+https://medium.com/@ankur_anand/a-visual-guide-to-golang-memory-allocator-from-ground-up-e132258453ed
