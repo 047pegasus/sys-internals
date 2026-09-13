@@ -1,0 +1,23 @@
+step,section,event,label,requested_bytes,allocated_bytes,rss_kb
+1,glibc,start,process start,0,0,4348
+2,glibc,alloc,malloc(64 bytes),64,72,4388
+3,glibc,alloc,malloc(4.0 KB),4096,4104,4396
+4,glibc,alloc,malloc(128.0 KB),131072,135144,4532
+5,glibc,alloc,malloc(1.0 MB),1048576,1052648,5564
+6,glibc,alloc,malloc(10.0 MB),10485760,10489832,15812
+7,glibc,free,free() the 64 bytes block,64,0,15816
+8,glibc,free,free() the 4.0 KB block,4096,0,15820
+9,glibc,free,free() the 128.0 KB block,131072,0,15692
+10,glibc,free,free() the 1.0 MB block,1048576,0,14668
+11,glibc,free,free() the 10.0 MB block,10485760,0,4428
+12,glibc,trim,malloc_trim(0),0,0,4428
+13,custom,start,process start,0,0,4472
+14,custom,alloc,block A,64,64,4480
+15,custom,alloc,block B,128,128,4484
+16,custom,alloc,block C,256,256,4488
+17,custom,free,free() block B,128,0,4492
+18,custom,alloc,block D,100,128,4496
+19,custom,free,free() block A,64,0,4500
+20,custom,free,free() block D,100,0,4504
+21,custom,free,free() block C,256,0,4524
+22,custom,end,after freeing everything,0,0,4532
