@@ -1,0 +1,5 @@
+FORK_STATE,parent,before_fork,37124,33652,0,35171
+FORK_STATE,parent,after_fork_before_child_write,37252,128,33524,18378
+FORK_STATE,child,after_fork_before_write,35000,128,33524,16979
+FORK_STATE,child,after_writing_half,35128,16520,17132,25199
+FORK_STATE,parent,after_child_exit,37256,33656,0,35176
