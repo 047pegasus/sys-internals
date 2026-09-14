@@ -71,7 +71,10 @@ Parent allocates + touches memory
 This is why the classic mental model of `fork()` as “copy the entire process immediately” is misleading on modern Linux. The virtual address spaces are separate after `fork()`, but physical memory is initially shared wherever copy-on-write permits it.
 
 ## Reading Material & Links:
-https://www.microsoft.com/en-us/security/blog/2026/05/01/cve-2026-31431-copy-fail-vulnerability-enables-linux-root-privilege-escalation/ \n
-https://man7.org/linux/man-pages/man2/fork.2.html \n
-https://www.kernel.org/doc/gorman/html/understand/understand007.html \n
+https://www.microsoft.com/en-us/security/blog/2026/05/01/cve-2026-31431-copy-fail-vulnerability-enables-linux-root-privilege-escalation/
+
+https://man7.org/linux/man-pages/man2/fork.2.html
+
+https://www.kernel.org/doc/gorman/html/understand/understand007.html
+
 https://kernel-internals.org/mm/cow/
